@@ -9,8 +9,8 @@ class IpToLoc
 
   def get_loc ip
     loc = @i2l.get_all(ip)
-    {'Country_Code' => loc.country_short, 
-     'Country_Name' => loc.country_long 
+    {'Country_Code' => loc["country_short"] ,
+     'Country_Name' => loc["country_long"] 
     }
   end
 
